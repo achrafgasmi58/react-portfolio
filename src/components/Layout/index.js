@@ -1,6 +1,6 @@
-import '/.index.scss';
-//create a component called Layout
+
+import './index.scss';
 const Layout = () => { 
-  return <>Hello</>
+  return <>Hello!!!</>
 }
 export default Layout;
