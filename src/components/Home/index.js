@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from "../../assets/images/blue_logo.png";
 import "./index.scss";
-import Logo from "./Logo";
+
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -28,7 +28,8 @@ const Home = () => {
             <div className="text-zone">
                 <h1>
                   <span className={letterClass}>H</span>
-                  <span className={`${letterClass} _12`}>i,</span>
+                  <span className={`${letterClass} _12`}>i</span>
+                  <span className={`${letterClass} _12`}>,</span>
                   <br />
                   <span className={`${letterClass} _13`}>I</span>
                   <span className={`${letterClass} _14`}>'m</span>
@@ -47,7 +48,7 @@ const Home = () => {
                 <h2>Full Stack Developer / Digital Marketer / Musician</h2>
                 <Link to ="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <Logo />
+          
         </div>
     );
 }
